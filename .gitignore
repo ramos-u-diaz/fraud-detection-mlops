@@ -208,3 +208,7 @@ __marimo__/
 
 data/raw/
 data/processed/
+
+mlflow.db
+mlruns/
+tabnet_model.zip

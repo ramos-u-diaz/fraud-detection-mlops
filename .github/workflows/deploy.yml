@@ -3,7 +3,12 @@ name: Deploy Fraud Detection Pipeline
 on:
   push:
     branches: [main]
-
+    paths-ignore:
+      - 'README.md'
+      - '**.md'
+      - 'notebooks/**'
+      - 'data/**'
+      
 env:
   AWS_REGION: us-east-2
   ECR_REPOSITORY: fraud-scoring
